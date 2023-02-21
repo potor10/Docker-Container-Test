@@ -41,9 +41,6 @@ jobs:
       
       - name: Release
         run: |
-          docker login --username ${{ secrets.DOCKER_HUB_USERNAME }} --password ${{ secrets.DOCKER_HUB_TOKEN }}
+          docker login --username ${{ secrets.DOCKER_HUB_USERNAME }} --password-stdin ${{ secrets.DOCKER_HUB_TOKEN }}
           docker build . --file Dockerfile --tag potor10/sekai-client:$(date +%s)
-          docker images
-          docker image inspect client:latest
-          docker run client:latest
           docker push potor10/sekai-client:client:latest 
