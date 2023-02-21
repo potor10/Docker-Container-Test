@@ -1,3 +1,3 @@
 #!/bin/sh -l
 
-/Docker-Container-Test-Rust
+/docker_container_test_rust
