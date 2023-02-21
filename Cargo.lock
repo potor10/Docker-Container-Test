@@ -3,5 +3,5 @@
 version = 3
 
 [[package]]
-name = "Docker-Container-Test-Rust"
+name = "docker_container_test_rust"
 version = "0.1.0"
