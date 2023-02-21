@@ -41,7 +41,6 @@ jobs:
       
       - name: Release
         run: |
-          echo "(date +%s)" > $DATE
           docker login --username ${{ secrets.DOCKER_HUB_USERNAME }} --password ${{ secrets.DOCKER_HUB_TOKEN }}
-          docker build . --file Dockerfile --tag potor10/sekai-client:$DATE
-          docker push potor10/sekai-client:$DATE
+          docker build . --file Dockerfile --tag potor10/sekai-client:$(date +%s)
+          docker push potor10/sekai-client
