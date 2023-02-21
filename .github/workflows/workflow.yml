@@ -43,4 +43,4 @@ jobs:
         run: |
           docker login --username ${{ secrets.DOCKER_HUB_USERNAME }} --password ${{ secrets.DOCKER_HUB_TOKEN }}
           docker build . --file Dockerfile --tag potor10/sekai-client:$(date +%s)
-          docker push potor10/sekai-client:client:latest 
+          docker push potor10/sekai-client:latest 
