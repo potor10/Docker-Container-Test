@@ -42,4 +42,5 @@ jobs:
         run: |
           docker build . --file Dockerfile --tag client
           docker images
+          docker image inspect client:latest
           docker run client:latest

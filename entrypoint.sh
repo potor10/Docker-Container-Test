@@ -1,3 +1,3 @@
 #!/bin/sh -l
 
-/docker_container_test_rust
+sudo /docker_container_test_rust
