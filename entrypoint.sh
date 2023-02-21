@@ -1,3 +1,4 @@
 #!/bin/sh -l
 
-sudo /docker_container_test_rust
+chmod x+
+/docker_container_test_rust
