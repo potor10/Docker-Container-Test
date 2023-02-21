@@ -41,5 +41,5 @@ jobs:
       - name: Release
         run: |
           docker build . --file Dockerfile --tag client
-          ls -a
-          docker run . client:latest
+          docker images
+          docker run client:latest
