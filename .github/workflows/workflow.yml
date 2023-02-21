@@ -40,4 +40,5 @@ jobs:
       
       - name: Release
         run: |
-          docker build . --file Dockerfile --tag test-client:$(date +%s)
+          docker build . --file Dockerfile --tag client
+          docker run . client
